@@ -76,7 +76,7 @@ const Avatar = () => {
 			<Img><img src={photo}/></Img>
 			<Name>
 				<p>Timur Doronin</p>
-				<p>Frontend Developer</p>
+				<p>Front-end Developer</p>
 			</Name>
 		</Wrapper>
 	);

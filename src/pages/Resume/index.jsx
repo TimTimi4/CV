@@ -1,18 +1,24 @@
 import styled from "styled-components";
 import PageTemplate from "../../components/PageTemplate";
 import MainTitle from "../../components/MainTitle";
+import UnderLine from "../../components/Underline";
+import Skills from "../../components/Skills";
+import Experience from "../../components/Experience";
+import Education from "../../components/Education";
 
 const Wrapper = styled.div`
-margin: 0px 0px 0px 84px;
+margin: 0px 0px 50px 84px;
 `
-const UnderLine = styled.div`
-	border-top: 1px solid #C4C4C4;
-	width: 100%;
-`
+
 const StyledMainTitle = styled(MainTitle)`
 margin: 91px 0px 6px 0px;
 `
 
+const Profile = styled.div`
+margin: 33px 15px 0px 10px;
+font-size: 12px;
+max-width: 595px;
+`
 
 const Resume = () => {
 	return(
@@ -20,6 +26,10 @@ const Resume = () => {
 			<Wrapper>
 				<StyledMainTitle>My Resume</StyledMainTitle>
 				<UnderLine/>
+				<Profile>Junior front-end developer. I approach my work responsibly and strive to write good code, not just working one. I want to participate in the implementation of cool projects, contribute and develop my skills.</Profile>
+				<Skills/>
+				<Experience/>
+				<Education/>
 			</Wrapper>
 		</PageTemplate>
 	);
