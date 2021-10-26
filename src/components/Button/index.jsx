@@ -3,14 +3,12 @@ import { NavLink } from "react-router-dom";
 
 
 const Wrapper = styled.div`
-max-width: 182px;
-background: #E9DFD4;
+min-width: 182px;
 border: 1px solid #FE8158;
 box-sizing: border-box;
 border-radius: 6px;
 text-align: center;
 padding: 6px 0px 6px 0px;
-margin: 7px auto 7px auto;
 font-weight: 700;
 font-size: 12px;
 &:active{
@@ -18,9 +16,9 @@ font-size: 12px;
 }
 `
 
-const Button = ({children, onClick, type, link}) => {
+const Button = ({children, onClick, type, link, className}) => {
 	const buttonElement = (
-		<Wrapper type={type || 'button'} onClick={onClick}>
+		<Wrapper type={type || 'button'} onClick={onClick} className={className}>
 			{children}
 		</Wrapper>
 	);

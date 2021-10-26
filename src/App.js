@@ -1,9 +1,9 @@
 import {Route, BrowserRouter, Switch} from 'react-router-dom';
 import Theme from './styles/theme';
-import About from './pages/About/index.jsx';
-import Resume from './pages/Resume/index.jsx';
-import Projects from './pages/Projects/index.jsx';
-import Contacts from './pages/Contacts/index.jsx';
+import About from './pages/About';
+import Resume from './pages/Resume'
+import Projects from './pages/Projects';
+import Contacts from './pages/Contacts';
 
 function App() {
   return (

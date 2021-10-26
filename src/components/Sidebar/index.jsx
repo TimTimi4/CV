@@ -10,7 +10,10 @@ const Wrapper = styled.div `
 	width: 100%;
 	background-color: #E9DFD4;
 	max-width: 220px;
-`
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+	`
 
 const Sidebar = () => {
 	return(
