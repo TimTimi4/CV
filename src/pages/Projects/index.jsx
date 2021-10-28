@@ -15,10 +15,10 @@ font-size: 14px;
 `
 
 const projects = [
-	{id:1, src: PlugSpotImg, title:"PlugSpot", text:"Application for finding charging places", gitlink:"https://github.com/TimTimi4/PlugSpot", route: `/projects/1`},
-	{id:2, src: TodoListImg, title:"TodoList", text:"To do list app", gitlink:"https://github.com/TimTimi4/TODOLIST", route: "/projects/2"},
-	{id:3, src: LuxtraderImg, title:"Luxtrader", text:"Antique auction", gitlink:"https://github.com/TimTimi4/Luxtrader", route: "/projects/3"},
-	{id:4, src:AODImg, title:"AOD", text:"Antique bike shop", gitlink:"https://github.com/TimTimi4/AOD", route: "/projects/4"}
+	{id:1, src: PlugSpotImg, title:"PlugSpot", text:"Application for finding charging places", gitlink:"https://github.com/TimTimi4/PlugSpot", route: `/projects/plugspot`},
+	{id:2, src: TodoListImg, title:"TodoList", text:"To do list app", gitlink:"https://github.com/TimTimi4/TODOLIST", route: `/projects/todolist`},
+	{id:3, src: LuxtraderImg, title:"Luxtrader", text:"Antique auction", gitlink:"https://github.com/TimTimi4/Luxtrader", route: `/projects/luxtrader`},
+	{id:4, src:AODImg, title:"AOD", text:"Antique bike shop", gitlink:"https://github.com/TimTimi4/AOD", route: `/projects/aod`}
 ]
 
 

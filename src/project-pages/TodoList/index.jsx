@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { useParams } from "react-router";
 
-const PlugSpot = (props) => {
+const TodoList = (props) => {
 	const { id } = useParams()
 	return(
 		<div>
-      <h3>Тут Плаг Спот ID: {id}</h3>
+      <h3>Тут Ту ду лист ID: {id}</h3>
     </div>
 	);
 }
 
-export default PlugSpot
+export default TodoList

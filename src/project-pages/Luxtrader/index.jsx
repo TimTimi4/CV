@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { useParams } from "react-router";
 
-const PlugSpot = (props) => {
+const Luxtrader = (props) => {
 	const { id } = useParams()
 	return(
 		<div>
-      <h3>Тут Плаг Спот ID: {id}</h3>
+      <h3>Тут luxtrader ID: {id}</h3>
     </div>
 	);
 }
 
-export default PlugSpot
+export default Luxtrader
