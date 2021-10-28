@@ -10,10 +10,6 @@ const Wrapper = styled.div`
 margin: 0px 0px 50px 84px;
 `
 
-const StyledMainTitle = styled(MainTitle)`
-margin: 91px 0px 6px 0px;
-`
-
 const Profile = styled.div`
 margin: 33px 15px 0px 10px;
 font-size: 12px;
@@ -24,7 +20,7 @@ const Resume = () => {
 	return(
 		<PageTemplate>
 			<Wrapper>
-				<StyledMainTitle>My Resume</StyledMainTitle>
+				<MainTitle>My Resume</MainTitle>
 				<UnderLine/>
 				<Profile>Junior front-end developer. I approach my work responsibly and strive to write good code, not just working one. I want to participate in the implementation of cool projects, contribute and develop my skills.</Profile>
 				<Skills/>

@@ -32,11 +32,11 @@ border-bottom-left-radius:6px;
 `
 
 
-const ProgressBar = ({children, width}) => {
+const ProgressBar = ({text, width}) => {
 	return (
 		<div>
 			<Text>
-				<p>{children}</p>
+				<p>{text}</p>
 				<p>{width}</p>
 			</Text>
 			<ProgressBarBorder>

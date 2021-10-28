@@ -17,11 +17,14 @@ p{
 }
 `
 
+const StyledSubtitle = styled(Subtitle)`
+	margin: 40px 0px 20px 0px;
+`
 
 const Experience = () => {
 	return (
 		<div>
-			<Subtitle>Experience</Subtitle>
+			<StyledSubtitle>Experience</StyledSubtitle>
 			<Text>
 				<p>03/2021 - Present time</p>
 				<p>Freelance Frontend Developer</p>

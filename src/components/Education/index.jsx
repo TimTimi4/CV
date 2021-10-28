@@ -11,10 +11,15 @@ p{
 	}
 }
 `
+
+const StyledSubtitle = styled(Subtitle)`
+	margin: 40px 0px 20px 0px;
+`
+
 const Education = () => {
 	return (
 		<div>
-			<Subtitle>Education</Subtitle>
+			<StyledSubtitle>Education</StyledSubtitle>
 			<Text>
 				<p>2011 - 2017 Kyrgyz-Russian Slavic University </p>
 				<p>Mining Engineer</p>

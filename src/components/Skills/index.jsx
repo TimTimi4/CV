@@ -1,15 +1,29 @@
+import styled from "styled-components";
 import ProgressBar from "../ProgressBar";
 import Subtitle from "../SubTitle";
+
+const StyledSubtitle = styled(Subtitle)`
+	margin: 40px 0px 20px 0px;
+`
+
+const skills = [
+	{id:1, width: "95%", text:"HTML"},
+	{id:2, width: "95%", text:"CSS"},
+	{id:3, width: "90%", text:"Bootstrap"},
+	{id:4, width: "70%", text:"JavaScript"},
+	{id:5, width: "80%", text:"React"},
+]
+
 
 const Skills = () => {
 	return (
 		<div>
-			<Subtitle>SKILLS</Subtitle>
-			<ProgressBar width="95%">HTML</ProgressBar>
-			<ProgressBar width="95%">CSS</ProgressBar>
-			<ProgressBar width="90%">Bootstrap</ProgressBar>
-			<ProgressBar width="70%">JavaScript</ProgressBar>
-			<ProgressBar width="80%">React</ProgressBar>
+			<StyledSubtitle>SKILLS</StyledSubtitle>
+			{
+				skills.map(item => (
+					<ProgressBar key={item.id} width={item.width} text={item.text}/>
+				))
+			}
 		</div>
 	)
 }

@@ -1,10 +1,20 @@
 import styled from "styled-components";
 import PageTemplate from "../../components/PageTemplate";
+import MainTitle from "../../components/MainTitle";
+import UnderLine from "../../components/Underline";
+
+const Wrapper = styled.div`
+margin: 0px 0px 50px 84px;
+font-size: 14px;
+`
 
 const Contacts = () => {
 	return(
 		<PageTemplate>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nesciunt consequuntur minus est error, quaerat illo dolorem inventore tempore provident sit, maiores, aspernatur veritatis accusamus. Enim nemo, dolores ex quidem assumenda eum hic sed id. Rem quae similique magni at, atque, eius consectetur vel nisi nihil reprehenderit beatae sint est.</div>
+			<Wrapper>
+				<MainTitle>Contacts</MainTitle>
+				<UnderLine/>
+			</Wrapper>
 		</PageTemplate>
 	);
 }

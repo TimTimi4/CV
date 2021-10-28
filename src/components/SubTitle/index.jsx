@@ -5,12 +5,11 @@ font-weight: 700;
 font-size: 20px;
 text-transform: uppercase;
 color: ${props => props.theme.colors.primary};
-margin: 40px 0px 20px 0px;
 `
 
-const Subtitle = ({children}) => {
+const Subtitle = ({children, className}) => {
 	return (
-		<StyledSubtitle>{children}</StyledSubtitle>
+		<StyledSubtitle className={className}>{children}</StyledSubtitle>
 	)
 }
 export default Subtitle
