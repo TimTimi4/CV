@@ -40,7 +40,7 @@ justify-content: space-evenly;
 font-size: 12px;
 `
 
-const ItemProj = ({text, title,src, gitlink, link, onClick}) => {
+const ItemProj = ({text, title, src, gitlink, link, onClick}) => {
 	const project = (
 		<Wrapper>
 			<Img><img src={src} onClick={onClick}/></Img>
