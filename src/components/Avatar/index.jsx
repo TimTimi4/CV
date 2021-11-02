@@ -10,32 +10,28 @@ const Wrapper = styled.div `
 	align-items: center;
 	text-align: center;
 `
-
 const OrangeSircle = styled.div `
-position: absolute;
-z-index: 2;
-right: 17px;
-top: -12px;
-width: 35px;
-height: 35px;
-background: #FE8158;
-border-radius: 50%;
+	position: absolute;
+	z-index: 2;
+	right: 17px;
+	top: -12px;
+	width: 35px;
+	height: 35px;
+	background: #FE8158;
+	border-radius: 50%;
 `
-
 const BlueSircle = styled.div `
-position: absolute;
-z-index: 2;
-left: 5px;
-top: 60px;
-width: 22px;
-height: 22px;
-background: #51C0DA;
-border-radius: 50%;
+	position: absolute;
+	z-index: 2;
+	left: 5px;
+	top: 60px;
+	width: 22px;
+	height: 22px;
+	background: #51C0DA;
+	border-radius: 50%;
 `
-
-
 const Img = styled.div `
-margin: 0px auto 0px auto;
+	margin: 0px auto 0px auto;
 	width: 110px;
 	height: 110px;
 	border-radius: 50%;
@@ -51,9 +47,8 @@ margin: 0px auto 0px auto;
 		top: 12px;
 		left: 5px;
 		transform: scale(0.8);
-		}
+	}
 `
-
 const Name = styled.div `
 	p {
 		&:first-child{
@@ -67,7 +62,6 @@ const Name = styled.div `
 		}
 	}
 `
-
 const Avatar = () => {
 	return(
 		<Wrapper>

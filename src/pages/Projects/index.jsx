@@ -3,12 +3,11 @@ import PageTemplate from "../../components/PageTemplate";
 import MainTitle from "../../components/MainTitle";
 import UnderLine from "../../components/Underline";
 import ItemProj from "../../components/ItemProj";
-import { projects } from "../../const/ProjectData";
-
+import { projects } from "../../Data/project-data";
 
 const Wrapper = styled.div`
-margin: 0px 0px 50px 84px;
-font-size: 14px;
+	margin: 0px 0px 50px 84px;
+	font-size: 14px;
 `
 
 const Projects = () => {
@@ -19,7 +18,7 @@ const Projects = () => {
 				<UnderLine/>
 				{
 				projects.map(item =>(
-					<ItemProj key={item.id} src={item.src} title={item.title} text={item.text} gitlink={item.gitlink}link={item.route}></ItemProj>
+					<ItemProj key={item.id} src={item.src} title={item.title} text={item.text} gitlink={item.gitlink}link={item.id}></ItemProj>
 				))
 				}
 			</Wrapper>

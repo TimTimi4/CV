@@ -14,7 +14,6 @@ const skills = [
 	{id:5, width: "80%", text:"React"},
 ]
 
-
 const Skills = () => {
 	return (
 		<div>

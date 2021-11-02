@@ -4,22 +4,20 @@ import { faGlobeAsia } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons'
 
-
 const global = <FontAwesomeIcon icon={faGlobeAsia} />
 const letter = <FontAwesomeIcon icon={faEnvelope} />
 const mobphone = <FontAwesomeIcon icon={faPhoneSquareAlt} />
 
-
 const Wrapper = styled.div`
-font-size: 18px;
-margin: 40px 0px 0px 0px;
-letter-spacing: 0.2px;
-div{
-	margin: 5px 0px 5px 0px;
-	span{
-		padding: 0px 0px 0px 5px;
+	font-size: 18px;
+	margin: 40px 0px 0px 0px;
+	letter-spacing: 0.2px;
+	div{
+		margin: 5px 0px 5px 0px;
+		span{
+			padding: 0px 0px 0px 5px;
+		}
 	}
-}
 `
 
 const ContactData = () => {

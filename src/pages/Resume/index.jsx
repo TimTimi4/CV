@@ -7,13 +7,13 @@ import Experience from "../../components/Experience";
 import Education from "../../components/Education";
 
 const Wrapper = styled.div`
-margin: 0px 0px 50px 84px;
+	margin: 0px 0px 50px 84px;
 `
 
 const Profile = styled.div`
-margin: 33px 15px 0px 10px;
-font-size: 12px;
-max-width: 595px;
+	margin: 33px 15px 0px 10px;
+	font-size: 14px;
+	max-width: 595px;
 `
 
 const Resume = () => {

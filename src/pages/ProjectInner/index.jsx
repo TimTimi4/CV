@@ -1,23 +1,28 @@
 import styled from "styled-components";
-import { projects } from "../../const/ProjectData";
+import { projects } from "../../Data/project-data";
 import Subtitle from "../../components/SubTitle";
 import ProjSlider from "../../components/ProjSlider";
 import GitLink from "../../components/GitLink";
 
 const Wrapper = styled.div`
-padding: 30px 10px 10px 10px;`
+	padding: 30px 10px 10px 10px;`
 
 const StyledSubtitle = styled(Subtitle)`
-text-align: center;
+	text-align: center;
+	color: #51C0DA;
+	&:hover{
+		transition: none;
+	}
 `
 const TextBLock = styled.div`
-margin: 30px auto 0px auto;
-font-size: 12px;
-text-align: center;
-max-width: 500px;
+	margin: 30px auto 0px auto;
+	font-size: 14px;
+	text-align: start;
+	max-width: 700px;
+	line-height: 20px;
 `
 const StyledGitLink = styled(GitLink)`
-font-size: 15px;
+	font-size: 14px;
 `
 
 const ProjectInner = ({match}) => {
@@ -25,9 +30,11 @@ const ProjectInner = ({match}) => {
 	return (
 		<Wrapper>
 			<StyledSubtitle>{item.title}</StyledSubtitle>
-			<TextBLock>{item.desc}</TextBLock>
+			<TextBLock>{item.desc}
+				<br />
+				<StyledGitLink>{item.gitlink}</StyledGitLink>
+			</TextBLock>
 			<ProjSlider>{item}</ProjSlider>
-			<StyledGitLink>{item.gitlink}</StyledGitLink>
 		</Wrapper>
 	)
 }

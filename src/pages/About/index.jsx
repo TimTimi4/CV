@@ -4,40 +4,40 @@ import PageTemplate from "../../components/PageTemplate";
 import MainTitle from "../../components/MainTitle";
 
 const Wrapper = styled.div`
-margin: 0px 0px 50px 84px;
-font-size: 14px;
+	margin: 0px 0px 50px 84px;
+	font-size: 14px;
 `
 const StyledMainTitle = styled(MainTitle)`
-margin: 91px 0px 6px 0px;
+	margin: 91px 0px 6px 0px;
 `
 
 const FirstTextBlock = styled.div`
-max-width: 650px;
-font-weight: 700;
-margin: 20px 15px 0px 10px;
+	max-width: 650px;
+	font-weight: 700;
+	margin: 20px 15px 0px 10px;
 `
 
 const SecondTextBlock = styled.div`
-max-width: 650px;
-margin: 20px 15px 0px 10px;
-p {
-	margin: 0px 0px 0px 0px;
-}
-ul{
-	padding: 0px 0px 0px 20px;
-	margin: 0px 0px 0px 0px;
-	p{
-		color: #A4A4A4;
+	max-width: 650px;
+	margin: 20px 15px 0px 10px;
+	p {
+		margin: 0px 0px 0px 0px;
 	}
-}
+	ul{
+		padding: 0px 0px 0px 20px;
+		margin: 0px 0px 0px 0px;
+		p{
+			color: #A4A4A4;
+		}
+	}
 `
 
 const ThirdTextBlock = styled.div`
-max-width: 650px;
-margin: 20px 15px 0px 10px;
-p{
-	margin: 0px 0px 0px 0px;
-}
+	max-width: 650px;
+	margin: 20px 15px 0px 10px;
+	p{
+		margin: 0px 0px 0px 0px;
+	}
 `
 
 const About = () => {
