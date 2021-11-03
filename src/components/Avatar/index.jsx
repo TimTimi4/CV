@@ -2,7 +2,7 @@ import styled from "styled-components";
 import photo from "../../img/photo.jpg";
 
 const Wrapper = styled.div `
-	max-width: 150px;
+	max-width: ${props => props.theme.sizes.blocks.avatar};
 	margin: 65px auto 0px auto;
 	position: relative;
 	display: flex;
@@ -17,7 +17,7 @@ const OrangeSircle = styled.div `
 	top: -12px;
 	width: 35px;
 	height: 35px;
-	background: #FE8158;
+	background: ${props => props.theme.colors.primary};
 	border-radius: 50%;
 `
 const BlueSircle = styled.div `
@@ -27,13 +27,13 @@ const BlueSircle = styled.div `
 	top: 60px;
 	width: 22px;
 	height: 22px;
-	background: #51C0DA;
+	background: ${props => props.theme.colors.secondary};
 	border-radius: 50%;
 `
 const Img = styled.div `
 	margin: 0px auto 0px auto;
-	width: 110px;
-	height: 110px;
+	width: ${props => props.theme.sizes.blocks.avatarImg};
+	height: ${props => props.theme.sizes.blocks.avatarImg};
 	border-radius: 50%;
 	position: relative;
 	background-color: #fff;
@@ -53,12 +53,12 @@ const Name = styled.div `
 	p {
 		&:first-child{
 			margin: 9px 0px 0px 0px;
-			font-size: 20px;
+			font-size: ${props => props.theme.sizes.fonts.subtitle};
 			font-family: ${props => props.theme.fonts.title};
 		}
 		&:last-child{
 			margin: 0px 0px 0px 0px;
-			font-size: 12px;
+			font-size: ${props => props.theme.sizes.fonts.secondaryText};
 		}
 	}
 `

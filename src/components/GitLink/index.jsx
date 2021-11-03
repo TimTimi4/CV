@@ -3,8 +3,8 @@ import Link from "../Icons/Link";
 
 const StyledLink = styled.a`
 	text-decoration:none;
-	color: #51C0DA;
-	font-size: 12px;
+	color: ${props=>props.theme.colors.secondary};
+	font-size: ${props=>props.theme.sizes.fonts.secondaryText};
 	font-weight: 700;
 `
 

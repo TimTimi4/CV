@@ -5,13 +5,13 @@ const Text = styled.div`
 	margin: 0px 15px 0px 10px; 
 	p{
 		margin: 0px 0px 0px 0px;
-		font-size: 14px;
+		font-size: ${props=>props.theme.sizes.fonts.primaryText};
 		&:nth-child(2){
 			font-weight: 700;
 		}
 		&:last-child{
 			margin: 6px 0px 0px 0px;
-			color:#A4A4A4;
+			color:${props=>props.theme.colors.secondaryText};
 			font-weight: 700;
 		}
 	}

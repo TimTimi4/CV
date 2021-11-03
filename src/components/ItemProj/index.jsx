@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	margin: 40px 0px 0px 0px;
-	max-width: 700px;
+	max-width: ${props => props.theme.sizes.blocks.primary};
 `
 
 const Img = styled.div`
@@ -16,7 +16,7 @@ const Img = styled.div`
 	position: relative;
 	background-color: #fff;
 	overflow: hidden;
-	border: 2px solid #51C0DA;
+	border: 2px solid ${props=>props.theme.colors.secondary};
 	img{
 		position: absolute;
 		-o-object-fit: cover;
@@ -33,12 +33,12 @@ const Description = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	font-size: 14px;
+	font-size: ${props=>props.theme.sizes.fonts.primaryText};
 `
 const StyledSubtitle = styled(Subtitle)`
 	&:hover{
 		transition: all 0.2s ease 0s;
-		color: #51C0DA;
+		color: ${props=>props.theme.colors.secondary};
 	}
 `
 

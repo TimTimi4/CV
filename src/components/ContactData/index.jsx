@@ -9,7 +9,7 @@ const letter = <FontAwesomeIcon icon={faEnvelope} />
 const mobphone = <FontAwesomeIcon icon={faPhoneSquareAlt} />
 
 const Wrapper = styled.div`
-	font-size: 18px;
+	font-size: ${props=>props.theme.sizes.fonts.contactsAdditional};
 	margin: 40px 0px 0px 0px;
 	letter-spacing: 0.2px;
 	div{

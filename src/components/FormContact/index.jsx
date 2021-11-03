@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Button from "../Button";
 
@@ -7,38 +7,38 @@ const Wrapper = styled.div`
 	label{
 		display: flex;
 		flex-direction: column;
-		color: #A4A4A4;
-		font-size: 12px;
+		color: ${props=>props.theme.colors.additionalText};
+		font-size: ${props=>props.theme.sizes.fonts.secondaryText};
 	}
 `
 
 const StyledLocalTitle = styled.h3`
-	font-size: 14px;
+	font-size: ${props=>props.theme.sizes.fonts.primaryText};
 	font-weight: 400;
 `
 
 const FormField = styled.form`
 	display:flex;
 	flex-direction:column;
-	max-width: 350px;
+	max-width: ${props=>props.theme.sizes.blocks.formInput};
 `
 const StyledInput = styled.input`
 	margin: 5px 0px 5px 0px;
 	border: 1px solid rgba(254, 129, 88);
 	height: 20px;
 	&:focus-visible{
-		border: 1px solid #51C0DA;
+		border: 1px solid ${props=>props.theme.colors.secondary};
 		outline: none;
 	}
 `
 const StyledTextArea = styled.textarea`
-	max-width: 450px;
+	max-width: ${props=>props.theme.sizes.blocks.formTextarea};
 	border: 1px solid rgba(254, 129, 88);
 	margin: 5px 0px 5px 0px;
 	height: 100px;
 	font-family: ${props => props.theme.fonts.primary};
 	&:focus-visible{
-		border: 1px solid #51C0DA;
+		border: 1px solid ${props=>props.theme.colors.secondary};
 		outline: none;
 	}
 `
@@ -51,8 +51,9 @@ const FormContact = () => {
 	const [emailDirty, setEmailDirty] = useState(false)
 	const [textDirty, setTextDirty] = useState(false)
 	const [error, setError] = useState('The field cannot be empty')
-	const [errorEmail, setErrorEmail] = useState('Incorrect Email')
+	const [errorEmail, setErrorEmail] = useState('The field cannot be empty')
 	const [errorText, setErrorText] = useState('The field cannot be empty')
+	const [formValid, setFormValid] = useState(false)
 
 const blurHandler = (e) => {
 	if (e.target.name === "name") setNameDirty(true)
@@ -62,7 +63,7 @@ const blurHandler = (e) => {
 
 const nameHandler = (e) => {
 	setName(e.target.value)
-	if (e.target.value == ""){
+	if (e.target.value === ""){
 		setError('The field cannot be empty')
 	} 
 	else setError('')
@@ -70,23 +71,30 @@ const nameHandler = (e) => {
 
 const emailHandler = (e) => {
 	setEmail(e.target.value)
-	const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 	if(!re.test(String(e.target.value).toLowerCase())){
 		setErrorEmail('Incorrect Email')
 	}
-	else if (e.target.value == "") {
-		setError('The field cannot be empty')
+	else{
+		setErrorEmail('')
 	}
-	else setEmail('')
 }
 
 const textHandler = (e) => {
 	setText(e.target.value)
-	if (e.target.value == ""){
+	if (e.target.value === ""){
 		setErrorText('The field cannot be empty')
 	} 
 	else setErrorText('')
 }
+
+useEffect( () => {
+	if(error || errorEmail || errorText ) {
+		setFormValid(false)
+	} else {
+		setFormValid(true)
+	}
+}, [error, errorEmail, errorText])
 
 	return(
 		<Wrapper>
@@ -107,7 +115,7 @@ const textHandler = (e) => {
 				<label htmlFor="message">Message
 					<StyledTextArea name="text" id="text" onChange={e => textHandler(e)} onBlur={e => blurHandler(e)}value={text}></StyledTextArea>
 				</label>
-				<Button type="submit">Send</Button>
+				<Button type="submit" disabled={!formValid}>Send</Button>
 			</FormField>
 		</Wrapper>
 	);

@@ -17,14 +17,14 @@ const StyledSlider = styled(Slider)`
 	.slick-arrow.slick-prev{
 		left: 0;
 		&::before{
-			color: #777676;
+			color: ${props => props.theme.colors.secondaryText};
 			font-size: 30px;
 		}
 	}
 	.slick-arrow.slick-next{
 		right: 10px;
 		&::before{
-			color: #777676;
+			color: ${props => props.theme.colors.secondaryText};
 			font-size: 30px;
 		}
 	}
@@ -36,11 +36,11 @@ const StyledSlider = styled(Slider)`
 		border-radius: 50%;
 		width: 7px;
 		height: 7px;
-		border: 2px solid #777676;
+		border: 2px solid ${props => props.theme.colors.secondaryText};
 		margin: 0px 7px 0px 7px;
 	}
 	.slick-dots li.slick-active{
-		background-color: #777676;
+		background-color: ${props => props.theme.colors.secondaryText};
 		border-radius: 50%;
 		width: 7px;
 		height: 7px;
@@ -58,7 +58,7 @@ const Img = styled.div`
 	padding: 0px 0px 35% 0px;
 	overflow: hidden;
 	position: relative;
-	border: 1px solid #777676;
+	border: 1px solid ${props => props.theme.colors.secondaryText};
 	img{
 		position: absolute;
 		-o-object-fit: cover;

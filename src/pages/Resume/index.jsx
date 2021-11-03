@@ -12,8 +12,8 @@ const Wrapper = styled.div`
 
 const Profile = styled.div`
 	margin: 33px 15px 0px 10px;
-	font-size: 14px;
-	max-width: 595px;
+	font-size: ${props=>props.theme.sizes.fonts.primaryText};
+	max-width: 550px;
 `
 
 const Resume = () => {

@@ -7,7 +7,7 @@ import { projects } from "../../Data/project-data";
 
 const Wrapper = styled.div`
 	margin: 0px 0px 50px 84px;
-	font-size: 14px;
+	font-size: ${props=>props.theme.sizes.fonts.primaryText};
 `
 
 const Projects = () => {

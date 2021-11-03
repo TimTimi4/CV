@@ -9,7 +9,7 @@ const Wrapper = styled.div `
 	height: 100%;
 	width: 100%;
 	background-color: #E9DFD4;
-	max-width: 220px;
+	max-width: ${props => props.theme.sizes.blocks.sidebar};
 	display: flex;
   flex-direction: column;
   align-items: center;

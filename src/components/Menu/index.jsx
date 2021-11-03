@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Button from "../Button";
 
 const Wrapper = styled.div `
-	max-width: 190px;
 	margin: 51px auto 0 auto;
 `
 const StyledButton = styled(Button)`

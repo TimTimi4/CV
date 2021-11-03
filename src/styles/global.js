@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle `
 		padding: 0;
 		box-sizing: border-box;
 		font-family: ${({ theme }) => theme.fonts.primary};
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primaryText};
     background-color: ${({ theme }) => theme.colors.bg};
 	}
 	button {

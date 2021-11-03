@@ -9,20 +9,20 @@ const Wrapper = styled.div`
 
 const StyledSubtitle = styled(Subtitle)`
 	text-align: center;
-	color: #51C0DA;
+	color: ${props=>props.theme.colors.secondary};
 	&:hover{
 		transition: none;
 	}
 `
 const TextBLock = styled.div`
 	margin: 30px auto 0px auto;
-	font-size: 14px;
+	font-size: ${props=>props.theme.sizes.fonts.primaryText};
 	text-align: start;
-	max-width: 700px;
+	max-width: ${props=>props.theme.sizes.blocks.primary};
 	line-height: 20px;
 `
 const StyledGitLink = styled(GitLink)`
-	font-size: 14px;
+	font-size: ${props=>props.theme.sizes.fonts.primaryText};
 `
 
 const ProjectInner = ({match}) => {
