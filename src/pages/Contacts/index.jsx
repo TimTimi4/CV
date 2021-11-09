@@ -19,7 +19,7 @@ const StyledRow = styled.div`
 const StyledColumn = styled.div`
 	flex: 0 1 50%;
 	&:last-child{
-		margin: 95px 0px 0px 0px;
+		margin: 95px 60px 0px 0px;
 	}
 	&:first-child{
 		position: relative;
