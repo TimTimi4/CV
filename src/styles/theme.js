@@ -15,15 +15,20 @@ const theme = {
 		{
 			blocks:
 				{
-					avatar: '150px',
-					avatarImg:'110px',
-					primary: '700px',
 					sidebar: '220px',
+					avatar:'110px',
+					primary: '700px',
 					progressbar:'380px',
 					menubutton: '182px',
 					formInput: '350px',
 					formTextarea:'450px',
 					secondary: '650px',
+					contactbutton: '270px',
+				},
+			elems:
+				{
+					menuButtonHeight:'34px',
+					menuButtonMargin: '16px'
 				},
 			fonts: 
 				{

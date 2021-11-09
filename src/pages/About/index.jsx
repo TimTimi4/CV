@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 	font-size: ${props=>props.theme.sizes.fonts.primaryText};
 `
 const StyledMainTitle = styled(MainTitle)`
-	margin: 91px 0px 6px 0px;
+	margin: 91px 0px  0px;
 `
 
 const FirstTextBlock = styled.div`

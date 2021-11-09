@@ -1,24 +1,25 @@
 import styled from "styled-components";
 
 const StyledButton = styled.a`
-	max-width: 100%;
-	box-shadow: 0 0 5px 1px ${props=>props.theme.colors.additionalText};
-	margin: 20px 45px 0px 0px;
-	font-weight: 700;
-	text-align: center;
-	padding: 10px 0px 10px 0px;
+	max-width: ${({ theme }) => theme.sizes.blocks.contactbutton};
 	display: block;
-	font-size: ${props=>props.theme.sizes.fonts.contactsAdditional};
-	&:hover{
-		transition: all 0.4s ease 0s;
-		transform: translate3d(0px,-2px,-2px);
-		box-shadow: 0 3px 10px 0px ${props=>props.theme.colors.additionalText};
+	border: 1px solid ${props => props.theme.colors.primary};
+	box-sizing: border-box;
+	border-radius: 6px;
+	text-align: center;
+	height: ${props => props.theme.sizes.elems.menuButtonHeight};
+	font-weight: 700;
+	font-size: ${props => props.theme.sizes.fonts.secondaryText};
+	background-color: transparent;
+	cursor: pointer;
+	&:active{
+		border: 1px solid ${props => props.theme.colors.secondary};
 	}
 `
 
-const ContactButton = ({ children, link }) => {
+const ContactButton = ({ children, link, className}) => {
 	return(
-		<StyledButton href={link}>{children}</StyledButton>
+		<StyledButton href={link} className={className}>{children}</StyledButton>
 	);
 }
 

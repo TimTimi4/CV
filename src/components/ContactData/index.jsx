@@ -10,19 +10,17 @@ const mobphone = <FontAwesomeIcon icon={faPhoneSquareAlt} />
 
 const Wrapper = styled.div`
 	font-size: ${props=>props.theme.sizes.fonts.contactsAdditional};
-	margin: 40px 0px 0px 0px;
-	letter-spacing: 0.2px;
 	div{
 		margin: 5px 0px 5px 0px;
-		span{
-			padding: 0px 0px 0px 5px;
-		}
+	}
+	span{
+		padding: 0px 0px 0px 5px;
 	}
 `
 
-const ContactData = () => {
+const ContactData = ({className}) => {
 	return(
-		<Wrapper>
+		<Wrapper className={className}>
 			<div>{global}<span>Kyrgyz Republick, Bishkek</span></div>
 			<div>{letter}<span>doronin200894@gmail.com</span></div>
 			<div>{mobphone}<span>+996 777 44 44 32 </span></div>

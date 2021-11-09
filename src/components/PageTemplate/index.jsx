@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 
 const Content = styled.div `
 	flex: 0 1 100%;
-	margin: 0px 0px 0px 220px;
+	margin: 0px 0px 0px ${({theme})=> theme.sizes.blocks.sidebar};
 `
 
 const PageTemplate = ({children}) => {
