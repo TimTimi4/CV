@@ -1,13 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledUnderLine = styled.div`
-	border-top: 1px solid #C4C4C4;
-	width: 100%;
+  border-top: 1px solid #C4C4C4;
+  width: 100%;
 `
 
-const UnderLine = () => {
-	return (
-		<StyledUnderLine/>
-	)
-}
+const UnderLine = () => (
+  <StyledUnderLine />
+)
 export default UnderLine

@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import Button from "../Button";
+import styled from 'styled-components'
+import Button from '../Button'
 
-const Wrapper = styled.div `
-	margin: 51px auto 0 auto;
+const Wrapper = styled.div`
+  margin: 51px auto 0 auto;
 `
 const StyledButton = styled(Button)`
-	&:first-child{
-		margin: 0px 0px ${({theme}) => theme.sizes.elems.menuButtonMargin} 0px;
-	}
+  &:first-child{
+    margin: 0px 0px ${({ theme }) => theme.sizes.elems.menuButtonMargin} 0px;
+  }
 `
 
 const menu = [
@@ -17,16 +17,14 @@ const menu = [
   { id: 4, text: 'Contacts', route: '/contacts' },
 ]
 
-const Menu = () => {
-	return(
-		<Wrapper>
-			{
-			menu.map(item => (
-				<StyledButton link={item.route} key={item.id}>{item.text}</StyledButton>
-			))
-			}
-		</Wrapper>
-	);
-}
+const Menu = () => (
+  <Wrapper>
+    {
+      menu.map((item) => (
+        <StyledButton link={item.route} key={item.id}>{item.text}</StyledButton>
+      ))
+      }
+  </Wrapper>
+)
 
 export default Menu

@@ -1,15 +1,15 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyle = createGlobalStyle `
-	body {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: ${({ theme }) => theme.fonts.primary};
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ${({ theme }) => theme.fonts.primary};
     color: ${({ theme }) => theme.colors.primaryText};
     background-color: ${({ theme }) => theme.colors.bg};
-	}
-	button {
+  }
+  button {
     -webkit-tap-highlight-color: transparent;
     font-family: ${({ theme }) => theme.fonts.primary};
   }
