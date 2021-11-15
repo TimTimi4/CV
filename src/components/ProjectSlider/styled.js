@@ -13,14 +13,14 @@ export const StyledSlider = styled(Slider)`
     top: 50%;
   }
   .slick-arrow.slick-prev{
-    left: 0;
+    left: 40px;
     &::before{
       color: ${({ theme }) => theme.colors.slider.arrow};
       font-size: 30px;
     }
   }
   .slick-arrow.slick-next{
-    right: 10px;
+    right: 50px;
     &::before{
       color: ${({ theme }) => theme.colors.slider.arrow};
       font-size: 30px;
@@ -32,8 +32,8 @@ export const StyledSlider = styled(Slider)`
   }
   .slick-dots li{
     border-radius: 50%;
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     border: 2px solid ${({ theme }) => theme.colors.slider.dots};
 
     margin: 0px 7px 0px 7px;
@@ -53,8 +53,8 @@ export const StyledSlider = styled(Slider)`
 
 export const ImageContainer = styled.div`
   margin: 0 auto;
-  max-width: 60%;
-  padding: 0px 0px 35% 0px;
+  max-width: 70%;
+  padding: 0px 0px 40% 0px;
   overflow: hidden;
   position: relative;
   border: 1px solid ${({ theme }) => theme.colors.secondaryText};

@@ -16,12 +16,14 @@ const settings = {
 const ProjectSlider = ({ slides }) => (
   <StyledSlider {...settings}>
     {
-        slides.map((slide) => (
-          <div key={slide}>
-            <ImageContainer><img src={slide} alt="slides" /></ImageContainer>
-          </div>
-        ))
-      }
+      slides.map((slide) => (
+        <div key={slide}>
+          <ImageContainer>
+            <img src={slide} alt="slides" />
+          </ImageContainer>
+        </div>
+      ))
+    }
   </StyledSlider>
 )
 
