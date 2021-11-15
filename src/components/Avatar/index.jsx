@@ -10,11 +10,11 @@ const Wrapper = styled.div`
 `
 const Name = styled.div`
   margin-top: 9px;
-  font-size: ${(props) => props.theme.sizes.fonts.subtitle};
-  font-family: ${(props) => props.theme.fonts.title};
+  font-size: ${({ theme }) => theme.sizes.fonts.subtitle};
+  font-family: ${({ theme }) => theme.fonts.title};
 `
 const Job = styled.div`
-  font-size: ${(props) => props.theme.sizes.fonts.secondaryText};
+  font-size: ${({ theme }) => theme.sizes.fonts.secondaryText};
 `
 
 const Avatar = () => (

@@ -10,7 +10,12 @@ const theme = {
       bg: '#F6F5F0',
       secondaryText: '#A4A4A4',
       additionalText: '#676767',
-      sidebar: '#E9DFD4',
+      slider: {
+        arrow: '#A4A4A4',
+        dots: '#A4A4A4',
+      },
+      sidebarBg: '#E9DFD4',
+      burger: '#676767',
     },
   sizes:
     {

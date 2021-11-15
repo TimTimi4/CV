@@ -5,20 +5,20 @@ import MainTitle from '../../components/MainTitle'
 
 const Wrapper = styled.div`
   margin: 0px 0px 50px 84px;
-  font-size: ${(props) => props.theme.sizes.fonts.primaryText};
+  font-size: ${({ theme }) => theme.sizes.fonts.primaryText};
 `
 const StyledMainTitle = styled(MainTitle)`
   margin: 91px 0px  0px;
 `
 
 const FirstTextBlock = styled.div`
-  max-width: ${(props) => props.theme.sizes.blocks.secondary};
+  max-width: ${({ theme }) => theme.sizes.blocks.secondary};
   font-weight: 700;
   margin: 20px 15px 0px 10px;
 `
 
 const SecondTextBlock = styled.div`
-  max-width: ${(props) => props.theme.sizes.blocks.secondary};
+  max-width: ${({ theme }) => theme.sizes.blocks.secondary};
   margin: 20px 15px 0px 10px;
   p {
     margin: 0px 0px 0px 0px;
@@ -27,13 +27,13 @@ const SecondTextBlock = styled.div`
     padding: 0px 0px 0px 20px;
     margin: 0px 0px 0px 0px;
     p{
-      color: ${(props) => props.theme.colors.secondaryText};
+      color: ${({ theme }) => theme.colors.secondaryText};
     }
   }
 `
 
 const ThirdTextBlock = styled.div`
-  max-width: ${(props) => props.theme.sizes.blocks.secondary};
+  max-width: ${({ theme }) => theme.sizes.blocks.secondary};
   margin: 20px 15px 0px 10px;
   p{
     margin: 0px 0px 0px 0px;

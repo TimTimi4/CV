@@ -1,4 +1,3 @@
-import { useState } from 'react/cjs/react.development'
 import styled from 'styled-components'
 
 const StyledBurger = styled.div`
@@ -15,7 +14,7 @@ const StyledBurger = styled.div`
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.burger};
     &:first-child {
       top: 0px;
     }
@@ -24,36 +23,13 @@ const StyledBurger = styled.div`
       bottom: 0px;
     }
   }
-  &.active {
-    span {
-      transform: scale(0);
-      &:first-child {
-        transform: rotate(45deg);
-        top: 7px;
-      }
-      &:last-child {
-        transform: rotate(-45deg);
-        bottom: 7px;
-      }
-    }
-  }
 `
-const Burger = () => {
-  const [active, setActive] = useState('')
-
-  const handleClick = (e) => {
-    setActive('active')
-    if (e.target.classList.contains('active')) {
-      setActive('')
-    }
-  }
-  return (
-    <StyledBurger onClick={(e) => handleClick(e)} className={active}>
-      <span />
-      <span />
-      <span />
-    </StyledBurger>
-  )
-}
+const Burger = ({ onClick }) => (
+  <StyledBurger onClick={onClick}>
+    <span />
+    <span />
+    <span />
+  </StyledBurger>
+)
 
 export default Burger

@@ -2,19 +2,19 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 const Wrapper = styled.button`
-  min-width: ${(props) => props.theme.sizes.blocks.menubutton};
+  min-width: ${({ theme }) => theme.sizes.blocks.menubutton};
   display: block;
-  border: 1px solid ${(props) => props.theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.primary};
   box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
-  height: ${(props) => props.theme.sizes.elems.menuButtonHeight};
+  height: ${({ theme }) => theme.sizes.elems.menuButtonHeight};
   font-weight: 700;
-  font-size: ${(props) => props.theme.sizes.fonts.secondaryText};
+  font-size: ${({ theme }) => theme.sizes.fonts.secondaryText};
   background-color: transparent;
   cursor: pointer;
   &:active{
-    border: 1px solid ${(props) => props.theme.colors.secondary};
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
   }
 `
 const ActiveNavLink = styled(NavLink)`

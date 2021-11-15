@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 
 const Profile = styled.div`
   margin: 33px 15px 0px 10px;
-  font-size: ${(props) => props.theme.sizes.fonts.primaryText};
+  font-size: ${({ theme }) => theme.sizes.fonts.primaryText};
   max-width: 550px;
 `
 

@@ -5,7 +5,7 @@ const Text = styled.div`
   margin: 0px 15px 0px 10px; 
   p {
     margin: 0px 0px 0px 0px;
-    font-size: ${(props) => props.theme.sizes.fonts.primaryText};
+    font-size: ${({ theme }) => theme.sizes.fonts.primaryText};
     &:last-child{
       font-weight: 700;
     }

@@ -7,7 +7,7 @@ const letter = <FontAwesomeIcon icon={faEnvelope} />
 const mobphone = <FontAwesomeIcon icon={faPhoneSquareAlt} />
 
 const Wrapper = styled.div`
-  font-size: ${(props) => props.theme.sizes.fonts.contactsAdditional};
+  font-size: ${({ theme }) => theme.sizes.fonts.contactsAdditional};
   div{
     margin: 5px 0px 5px 0px;
   }

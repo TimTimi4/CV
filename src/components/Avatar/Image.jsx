@@ -20,14 +20,14 @@ const PrimaryCircle = styled(Circle)`
   top: -11%;
   width: 32%;
   height: 32%;
-  background: ${(props) => props.theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primary};
 `
 const SecondaryCircle = styled(Circle)`
   left: -11%;
   top: 50%;
   width: 20%;
   height: 20%;
-  background: ${(props) => props.theme.colors.secondary};
+  background: ${({ theme }) => theme.colors.secondary};
 `
 
 const AvatarImage = () => (

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { projects } from '../../data/project-data'
 import Subtitle from '../../components/SubTitle'
-import ProjSlider from '../../components/ProjSlider'
+import ProjectSlider from '../../components/ProjectSlider'
 import GitLink from '../../components/GitLink'
 
 const Wrapper = styled.div`
@@ -9,32 +9,33 @@ const Wrapper = styled.div`
 
 const StyledSubtitle = styled(Subtitle)`
   text-align: center;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   &:hover{
     transition: none;
   }
 `
 const TextBLock = styled.div`
   margin: 30px auto 0px auto;
-  font-size: ${(props) => props.theme.sizes.fonts.primaryText};
+  font-size: ${({ theme }) => theme.sizes.fonts.primaryText};
   text-align: start;
-  max-width: ${(props) => props.theme.sizes.blocks.primary};
+  max-width: ${({ theme }) => theme.sizes.blocks.primary};
   line-height: 20px;
 `
 const StyledGitLink = styled(GitLink)`
-  font-size: ${(props) => props.theme.sizes.fonts.primaryText};
+  font-size: ${({ theme }) => theme.sizes.fonts.primaryText};
 `
 
 const ProjectInner = ({ match }) => {
-  const item = projects.find((p) => p.id === match.params.projectId)
+  const project = projects.find((p) => p.id === match.params.projectId)
+  const { title, desc, gitlink, slides } = project
   return (
     <Wrapper>
-      <StyledSubtitle>{item.title}</StyledSubtitle>
-      <TextBLock>{item.desc}
+      <StyledSubtitle>{title}</StyledSubtitle>
+      <TextBLock>{desc}
         <br />
-        <StyledGitLink>{item.gitlink}</StyledGitLink>
+        <StyledGitLink>{gitlink}</StyledGitLink>
       </TextBLock>
-      <ProjSlider>{item}</ProjSlider>
+      <ProjectSlider slides={slides} />
     </Wrapper>
   )
 }
