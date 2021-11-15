@@ -5,6 +5,7 @@ import Resume from './pages/Resume'
 import Projects from './pages/Projects'
 import Contacts from './pages/Contacts'
 import ProjectInner from './pages/ProjectInner'
+import NotFoundPage from './components/NotFoundPage'
 
 const App = () => (
   <Theme>
@@ -15,6 +16,7 @@ const App = () => (
         <Route path="/projects" component={Projects} exact />
         <Route path="/projects/:projectId" component={ProjectInner} exact />
         <Route path="/contacts" component={Contacts} exact />
+        <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
   </Theme>

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { projects } from '../../data/project-data'
+import { Redirect } from 'react-router-dom'
+import { projects } from '../../data/projectData'
 import Subtitle from '../../components/SubTitle'
 import ProjectSlider from '../../components/ProjectSlider'
 import GitLink from '../../components/GitLink'
@@ -29,6 +30,7 @@ const StyledGitLink = styled(GitLink)`
 
 const ProjectInner = ({ match }) => {
   const project = projects.find((p) => p.id === match.params.projectId)
+  if (!project) return <Redirect to="/404" />
   const { title, desc, gitlink, slides } = project
   return (
     <PageTemplate>
