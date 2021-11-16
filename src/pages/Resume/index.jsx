@@ -1,20 +1,9 @@
-import styled from 'styled-components'
 import PageTemplate from '../../components/PageTemplate'
 import MainTitle from '../../components/MainTitle'
 import UnderLine from '../../components/Underline'
 import Skills from '../../components/Skills'
-import Experience from '../../components/Experience'
-import Education from '../../components/Education'
-
-const Wrapper = styled.div`
-  margin: 0px 0px 50px 84px;
-`
-
-const Profile = styled.div`
-  margin: 33px 15px 0px 10px;
-  font-size: ${({ theme }) => theme.sizes.fonts.primaryText};
-  max-width: 550px;
-`
+import ResumeTextBlock from '../../components/ResumeTextBlock'
+import { Wrapper, Profile } from './styled'
 
 const Resume = () => (
   <PageTemplate>
@@ -27,8 +16,17 @@ const Resume = () => (
         contribute and develop my skills.
       </Profile>
       <Skills />
-      <Experience />
-      <Education />
+      <ResumeTextBlock
+        title="Expierence"
+        firstLine="02/2021 - Present time "
+        secondLine="Freelance Frontend Developer "
+        thirdLine="Made responsive layouts for small business"
+      />
+      <ResumeTextBlock
+        title="Education"
+        firstLine="2011 - 2017 Kyrgyz-Russian Slavic University"
+        secondLine="Mining Engineer"
+      />
     </Wrapper>
   </PageTemplate>
 )

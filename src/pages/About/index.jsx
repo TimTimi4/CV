@@ -1,44 +1,12 @@
-import styled from 'styled-components'
 import UnderLine from '../../components/Underline'
 import PageTemplate from '../../components/PageTemplate'
-import MainTitle from '../../components/MainTitle'
-
-const Wrapper = styled.div`
-  margin: 0px 0px 50px 84px;
-  font-size: ${({ theme }) => theme.sizes.fonts.primaryText};
-`
-const StyledMainTitle = styled(MainTitle)`
-  margin: 91px 0px  0px;
-`
-
-const FirstTextBlock = styled.div`
-  max-width: ${({ theme }) => theme.sizes.blocks.secondary};
-  font-weight: 700;
-  margin: 20px 15px 0px 10px;
-`
-
-const SecondTextBlock = styled.div`
-  max-width: ${({ theme }) => theme.sizes.blocks.secondary};
-  margin: 20px 15px 0px 10px;
-  p {
-    margin: 0px 0px 0px 0px;
-  }
-  ul{
-    padding: 0px 0px 0px 20px;
-    margin: 0px 0px 0px 0px;
-    p{
-      color: ${({ theme }) => theme.colors.secondaryText};
-    }
-  }
-`
-
-const ThirdTextBlock = styled.div`
-  max-width: ${({ theme }) => theme.sizes.blocks.secondary};
-  margin: 20px 15px 0px 10px;
-  p{
-    margin: 0px 0px 0px 0px;
-  }
-`
+import {
+  Wrapper,
+  StyledMainTitle,
+  FirstTextBlock,
+  SecondTextBlock,
+  ThirdTextBlock,
+} from './styled'
 
 const About = () => (
   <PageTemplate>

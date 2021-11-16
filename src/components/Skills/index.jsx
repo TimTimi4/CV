@@ -1,10 +1,5 @@
-import styled from 'styled-components'
+import { StyledSubtitle } from './styled'
 import ProgressBar from '../ProgressBar'
-import Subtitle from '../SubTitle'
-
-const StyledSubtitle = styled(Subtitle)`
-  margin: 40px 0px 20px 0px;
-`
 
 const skills = [
   { id: 1, width: '95%', text: 'HTML' },
