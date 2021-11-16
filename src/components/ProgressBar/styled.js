@@ -4,6 +4,9 @@ export const Text = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: ${({ theme }) => theme.sizes.blocks.progressbar};
+  @media ${({ theme }) => theme.media.mobileL} {
+    width: 280px;
+  }
   p {
     margin: 0px 0px 0px 0px;
     font-weight: 700;
@@ -20,6 +23,9 @@ export const ProgressBarBorder = styled.div`
   border-radius: 6px;
   height: 10px;
   width: ${({ theme }) => theme.sizes.blocks.progressbar};
+  @media ${({ theme }) => theme.media.mobileL} {
+    width: 280px;
+  }
   margin: 5px 0px 5px 0px;
 `
 

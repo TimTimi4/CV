@@ -7,6 +7,9 @@ export const Wrapper = styled.div`
   @media ${({ theme }) => theme.media.tablet} {
     margin: 0px 0px 40px 20px;
   }
+  @media ${({ theme }) => theme.media.mobileL} {
+    margin: 0px 20px 40px 20px;
+  }
 `
 export const StyledMainTitle = styled(MainTitle)`
   margin: 91px 0px  0px;

@@ -3,6 +3,9 @@ import Slider from 'react-slick'
 
 export const StyledSlider = styled(Slider)`
   margin: 50px 20px 100px 20px;
+  @media ${({ theme }) => theme.media.mobileL} {
+    margin: 30px 0px 40px 0px;
+  }
   position: relative;
   .slick-track{
     display: flex;
@@ -14,16 +17,34 @@ export const StyledSlider = styled(Slider)`
   }
   .slick-arrow.slick-prev{
     left: 40px;
+    @media ${({ theme }) => theme.media.laptop} {
+      left: 0px;
+    }
     &::before{
       color: ${({ theme }) => theme.colors.slider.arrow};
       font-size: 30px;
+      @media ${({ theme }) => theme.media.tablet} {
+        font-size: 25px;
+      }
+      @media ${({ theme }) => theme.media.mobileL} {
+        font-size: 20px;
+      }
     }
   }
   .slick-arrow.slick-next{
     right: 50px;
+    @media ${({ theme }) => theme.media.laptop} {
+      right: 0px;
+    }
     &::before{
       color: ${({ theme }) => theme.colors.slider.arrow};
       font-size: 30px;
+      @media ${({ theme }) => theme.media.tablet} {
+        font-size: 25px;
+      }
+      @media ${({ theme }) => theme.media.mobileL} {
+        font-size: 20px;
+      }
     }
   }
   .slick-dots{
@@ -49,7 +70,6 @@ export const StyledSlider = styled(Slider)`
     }
   }
 `
-
 export const ImageContainer = styled.div`
   margin: 0 auto;
   max-width: 70%;
@@ -57,6 +77,14 @@ export const ImageContainer = styled.div`
   overflow: hidden;
   position: relative;
   border: 1px solid ${({ theme }) => theme.colors.secondaryText};
+  @media ${({ theme }) => theme.media.tablet} {
+    padding: 0px 0px 50% 0px;
+    max-width: 80%;
+  }
+  @media ${({ theme }) => theme.media.mobileL} {
+    padding: 0px 0px 80% 0px;
+    max-width: 80%;
+  }
   img{
     position: absolute;
     -o-object-fit: cover;

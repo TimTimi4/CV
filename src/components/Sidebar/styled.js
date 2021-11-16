@@ -9,7 +9,7 @@ export const CloseSidebarArea = styled.div`
   height: 100%;
   display: none;
   opacity: 0.6;
-  z-index: 4;
+  z-index: 14;
   @media ${({ theme }) => theme.media.tablet} {
     display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   }
@@ -24,7 +24,7 @@ export const StyledSidebar = styled.div`
   background-color: ${({ theme }) => theme.colors.sidebarBg};
   max-width: ${({ theme }) => theme.sizes.blocks.sidebar};
   display: flex;
-  z-index: 5;
+  z-index: 15;
   flex-direction: column;
   align-items: center;
   transition: all .4s;

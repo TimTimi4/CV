@@ -3,7 +3,11 @@ import Subtitle from '../../components/SubTitle'
 import GitLink from '../../components/GitLink'
 
 export const Wrapper = styled.div`
-  padding: 30px 10px 10px 10px;
+  padding: 30px 10px 10px 40px;
+  @media ${({ theme }) => theme.media.tablet} {
+    margin: 10px 20px 40px 20px;
+    padding: 20px 0px 0px 0px;
+  }
   `
 
 export const StyledSubtitle = styled(Subtitle)`

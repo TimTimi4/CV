@@ -1,13 +1,12 @@
 import { ImageContainer, StyledSlider } from './styled'
 
 const settings = {
-  dots: true,
+  dots: false,
   arrows: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  centerMode: true,
   adaptiveHeight: true,
   autoplay: true,
   pauseOnHover: true,
