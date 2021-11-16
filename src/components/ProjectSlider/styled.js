@@ -35,7 +35,6 @@ export const StyledSlider = styled(Slider)`
     width: 6px;
     height: 6px;
     border: 2px solid ${({ theme }) => theme.colors.slider.dots};
-
     margin: 0px 7px 0px 7px;
   }
   .slick-dots li.slick-active{

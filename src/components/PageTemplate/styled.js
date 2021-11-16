@@ -8,4 +8,7 @@ export const Content = styled.div`
   //slick-slider-work next-line
   min-width: 0;
   margin: 0px 0px 0px ${({ theme }) => theme.sizes.blocks.sidebar};
+  @media ${({ theme }) => theme.media.tablet} {
+    margin: 0px 0px 0px 0px;
+  }
 `
