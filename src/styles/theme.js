@@ -38,8 +38,8 @@ const theme = {
         },
       fonts:
         {
-          primaryText: '14px',
-          secondaryText: '12px',
+          primaryText: '16px',
+          secondaryText: '14px',
           mainTitle: '40px',
           subtitle: '20px',
           contactsAdditional: '16px',
