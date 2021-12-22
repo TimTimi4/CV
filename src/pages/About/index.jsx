@@ -39,7 +39,7 @@ const About = () => (
           During this time I studied HTML, СSS, Bootstrap, JavaScript, React.
         </p>
         <p>Took part in a hackathon to develop an educational website for children.</p>
-        <p>Since April 2021, made responsive layouts for small business.</p>
+        <p>Since April 2021, have making responsive layouts for small business.</p>
       </ThirdTextBlock>
     </Wrapper>
   </PageTemplate>
