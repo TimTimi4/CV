@@ -17,8 +17,8 @@ const About = () => (
         I&apos;m a junior front-end developer.
       </FirstTextBlock>
       <SecondTextBlock>
-        <p>Before programming, I worked as mining engineer from 2018 to 2021.</p>
-        <p>During this time, I held positions:</p>
+        <p>Before programming, I have worked as mining engineer from 2018 to 2021.</p>
+        <p>During that time, I held positions:</p>
         <ul>
           <li>Mining foreman (manager) at a gold mine in Siberia.
             Russian Federation, Irkutsk region, Mining enterprise &apos;RETKON&apos;.
@@ -39,7 +39,7 @@ const About = () => (
           During this time I studied HTML, СSS, Bootstrap, JavaScript, React.
         </p>
         <p>Took part in a hackathon to develop an educational website for children.</p>
-        <p>Since April 2021, have making responsive layouts for small business.</p>
+        <p>Since February 2021, have making responsive layouts for small business.</p>
       </ThirdTextBlock>
     </Wrapper>
   </PageTemplate>

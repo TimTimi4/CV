@@ -20,7 +20,7 @@ const Resume = () => (
         title="Expierence"
         firstLine="02/2021 - Present time "
         secondLine="Freelance Frontend Developer "
-        thirdLine="Made responsive layouts for small business"
+        thirdLine="Making responsive layouts for small business"
       />
       <ResumeTextBlock
         title="Education"
