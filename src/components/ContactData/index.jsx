@@ -8,7 +8,7 @@ const mobphone = <FontAwesomeIcon icon={faPhoneSquareAlt} />
 
 const ContactData = ({ className }) => (
   <Wrapper className={className}>
-    <div>{global}<span>Kyrgyz Republick, Bishkek</span></div>
+    <div>{global}<span>Kyrgyz Republic, Bishkek</span></div>
     <div>{letter}<span>doronin200894@gmail.com</span></div>
     <div>{mobphone}<span>+996 777 44 44 32 </span></div>
   </Wrapper>
