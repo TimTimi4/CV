@@ -9,7 +9,7 @@ import NotFoundPage from './components/NotFoundPage'
 
 const App = () => (
   <Theme>
-    <BrowserRouter basename="MyResume">
+    <BrowserRouter basename="CV">
       <Switch>
         <Route path="/" component={About} exact />
         <Route path="/resume" component={Resume} exact />

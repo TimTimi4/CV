@@ -2,6 +2,7 @@ import PlugSpotImg from '../img/PlugSpot.jpg'
 import AODImg from '../img/AOD.jpg'
 import LuxtraderImg from '../img/Luxtrader.jpg'
 import TodoListImg from '../img/TODOLIST.jpg'
+import ContactListImg from '../img/ContactList.jpg'
 import Sl1PlugSpot from '../img/PlugSpot/slide-1.jpg'
 import Sl2PlugSpot from '../img/PlugSpot/slide-2.jpg'
 import Sl3PlugSpot from '../img/PlugSpot/slide-3.jpg'
@@ -24,6 +25,10 @@ import Sl2AOD from '../img/AOD/slide-2.jpg'
 import Sl3AOD from '../img/AOD/slide-3.jpg'
 import Sl4AOD from '../img/AOD/slide-4.jpg'
 import Sl5AOD from '../img/AOD/slide-5.jpg'
+import Sl1ContactList from '../img/ContactList/slide-1.jpg'
+import Sl2ContactList from '../img/ContactList/slide-2.jpg'
+import Sl3ContactList from '../img/ContactList/slide-3.jpg'
+import Sl4ContactList from '../img/ContactList/slide-4.jpg'
 
 export const projects = [
   {
@@ -63,5 +68,15 @@ export const projects = [
     gitlink: 'https://github.com/TimTimi4/AOD',
     desc: 'This is a site-store selling vintage bicycles and spare parts for them. My task for this project was to mark up the layout given to me by designer. The main requirement was full adaptability of the site for any resolution. For this project, html was written with BEM methodology by Yandex. Styles were described with scss and compiled by the prepros program.',
     slides: [Sl1AOD, Sl2AOD, Sl3AOD, Sl4AOD, Sl5AOD],
+  },
+  {
+    id: 'contactlist',
+    src: ContactListImg,
+    title: 'Contact List',
+    text: 'Contact List App',
+    gitlink: 'https://github.com/TimTimi4/ContactList',
+    desc:
+      'This site is list of contacts. Data get from server. Here you can get detailed info about each contact and edit it. Creating the site, a react/redux and material-ui was used. Stylization was carried out with styled-components. There is adaptability for various devices.',
+    slides: [Sl1ContactList, Sl2ContactList, Sl3ContactList, Sl4ContactList],
   },
 ]

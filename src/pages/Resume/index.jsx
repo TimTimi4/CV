@@ -17,7 +17,7 @@ const Resume = () => (
       </Profile>
       <Skills />
       <ResumeTextBlock
-        title="Expierence"
+        title="Experience"
         firstLine="02/2021 - Present time "
         secondLine="Freelance Frontend Developer "
         thirdLine="Making responsive layouts for small business"

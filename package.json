@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timtimi4.github.io/MyResume",
+  "homepage": "https://timtimi4.github.io/CV",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -48,7 +48,7 @@
       "react/jsx-one-expression-per-line": "off",
       "react/jsx-props-no-spreading": "off",
       "react/require-default-props": "off",
-			"react/prop-types": "off",
+      "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
       "react/function-component-definition": [
         2,

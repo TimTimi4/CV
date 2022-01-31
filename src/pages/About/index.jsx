@@ -34,12 +34,12 @@ const About = () => (
         </ul>
       </SecondTextBlock>
       <ThirdTextBlock>
-        <p>Since September 2020, I have been studying as a front-end developer.
+        <p>Since September 2020, I have been studying frontend development.
           My mentor is an active front-end developer and a senior lecturer at the IT academy.
           During this time I studied HTML, СSS, Bootstrap, JavaScript, React.
         </p>
         <p>Took part in a hackathon to develop an educational website for children.</p>
-        <p>Since February 2021, have making responsive layouts for small business.</p>
+        <p>Since February 2021, have been making responsive layouts for small business.</p>
       </ThirdTextBlock>
     </Wrapper>
   </PageTemplate>
