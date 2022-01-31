@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/CV/static/js/main.3a89f582.chunk.js",
-    "main.js.map": "/CV/static/js/main.3a89f582.chunk.js.map",
+    "main.js": "/CV/static/js/main.065d54b8.chunk.js",
+    "main.js.map": "/CV/static/js/main.065d54b8.chunk.js.map",
     "runtime-main.js": "/CV/static/js/runtime-main.cd915172.js",
     "runtime-main.js.map": "/CV/static/js/runtime-main.cd915172.js.map",
     "static/css/2.d4d0359e.chunk.css": "/CV/static/css/2.d4d0359e.chunk.css",
@@ -11,6 +11,7 @@
     "static/css/2.d4d0359e.chunk.css.map": "/CV/static/css/2.d4d0359e.chunk.css.map",
     "static/js/2.6a9a941a.chunk.js.LICENSE.txt": "/CV/static/js/2.6a9a941a.chunk.js.LICENSE.txt",
     "static/media/AOD.12d03e5d.jpg": "/CV/static/media/AOD.12d03e5d.jpg",
+    "static/media/ContactList.acc193d3.jpg": "/CV/static/media/ContactList.acc193d3.jpg",
     "static/media/Luxtrader.bfaeb85a.jpg": "/CV/static/media/Luxtrader.bfaeb85a.jpg",
     "static/media/TODOLIST.3d059ee9.jpg": "/CV/static/media/TODOLIST.3d059ee9.jpg",
     "static/media/photo.0ca09e29.jpg": "/CV/static/media/photo.0ca09e29.jpg",
@@ -18,15 +19,19 @@
     "static/media/slide-1.8263f0e2.jpg": "/CV/static/media/slide-1.8263f0e2.jpg",
     "static/media/slide-1.8266c62c.jpg": "/CV/static/media/slide-1.8266c62c.jpg",
     "static/media/slide-1.b3785d9b.jpg": "/CV/static/media/slide-1.b3785d9b.jpg",
+    "static/media/slide-1.b5b77ff0.jpg": "/CV/static/media/slide-1.b5b77ff0.jpg",
     "static/media/slide-1.f1c8a09d.jpg": "/CV/static/media/slide-1.f1c8a09d.jpg",
+    "static/media/slide-2.04061b9f.jpg": "/CV/static/media/slide-2.04061b9f.jpg",
     "static/media/slide-2.49537200.jpg": "/CV/static/media/slide-2.49537200.jpg",
     "static/media/slide-2.7e4aec06.jpg": "/CV/static/media/slide-2.7e4aec06.jpg",
     "static/media/slide-2.94f61305.jpg": "/CV/static/media/slide-2.94f61305.jpg",
     "static/media/slide-2.c50ac86d.jpg": "/CV/static/media/slide-2.c50ac86d.jpg",
     "static/media/slide-3.430fe2c0.jpg": "/CV/static/media/slide-3.430fe2c0.jpg",
+    "static/media/slide-3.465181dc.jpg": "/CV/static/media/slide-3.465181dc.jpg",
     "static/media/slide-3.4f4b000d.jpg": "/CV/static/media/slide-3.4f4b000d.jpg",
     "static/media/slide-3.b5dca86f.jpg": "/CV/static/media/slide-3.b5dca86f.jpg",
     "static/media/slide-3.e94423e6.jpg": "/CV/static/media/slide-3.e94423e6.jpg",
+    "static/media/slide-4.1506c323.jpg": "/CV/static/media/slide-4.1506c323.jpg",
     "static/media/slide-4.18ad1ff9.jpg": "/CV/static/media/slide-4.18ad1ff9.jpg",
     "static/media/slide-4.518fa040.jpg": "/CV/static/media/slide-4.518fa040.jpg",
     "static/media/slide-4.c38466a1.jpg": "/CV/static/media/slide-4.c38466a1.jpg",
@@ -42,6 +47,6 @@
     "static/js/runtime-main.cd915172.js",
     "static/css/2.d4d0359e.chunk.css",
     "static/js/2.6a9a941a.chunk.js",
-    "static/js/main.3a89f582.chunk.js"
+    "static/js/main.065d54b8.chunk.js"
   ]
 }
